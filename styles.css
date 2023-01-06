@@ -1,11 +1,17 @@
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
 #gridHolder{
     display: grid;
     
 }
 #gridHolder > div {
     border: solid black 2px;
-    width: 100px;
-    height: 100px;
+    width: 10px;
+    height: 10px;
     display: flex;
     justify-content: center;
     align-items: center;
