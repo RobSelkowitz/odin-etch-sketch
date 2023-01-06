@@ -3,6 +3,7 @@ body{
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    gap: 10px;
 }
 #gridHolder{
     display: grid;
@@ -16,4 +17,7 @@ body{
     justify-content: center;
     align-items: center;
     font-size: 24pt;
+}
+.colorChoice{
+    display: flex;
 }

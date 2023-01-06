@@ -12,8 +12,27 @@
         Select a color from the radio box.  When you move your pointer across 
         the grid, it will color boxes to match.  Click the reset button to clear
         the grid. </p>
-    <div id = "gridHolder"> </div>
-    <div id = "controlsHolder"></div>
+        <p> Choose a color to draw in.</p>
+
+    <div id = "controlsHolder">
+        <div class="colorChoice">
+            <input type="radio" id="gray" name="bkgcolor" value="gray">
+            <label for="gray">gray</label>
+            <input type="radio" id="yellow" name="bkgcolor" value="yellow">
+            <label for="yellow">yellow</label>    
+    
+            <input type="radio" id="blue" name="bkgcolor" value="blue">
+            <label for="blue">blue</label>
+        
+            <input type="radio" id="red" name="bkgcolor" value="red">
+            <label for="red">red</label>
+            <input type="radio" id="black" name="bkgcolor" value="black">
+            <label for="black">black</label>
+        </div>
+    </div>    
+        <div id = "gridHolder"> </div>
+
+    
 
     <script src="script.js"></script>
 </body>
