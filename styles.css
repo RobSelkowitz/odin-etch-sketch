@@ -1,0 +1,13 @@
+#gridHolder{
+    display: grid;
+    
+}
+#gridHolder > div {
+    border: solid black 2px;
+    width: 100px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24pt;
+}
