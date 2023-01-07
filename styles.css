@@ -9,7 +9,9 @@ body{
 #gridHolder{
     display: grid;
     border: solid black 2px;
-    background-color: white;;
+    background-color: white;
+    width: 500px;
+    height: 500px;
 }
 #controlsHolder{
     display: flex;
@@ -24,12 +26,11 @@ body{
 }
 #gridHolder > div {
   
-    width: 5px;
-    height: 5px;
     display: flex;
     justify-content: center;
     align-items: center;
     font-size: 24pt;
+    width: auto;
 }
 .colorChoice{
     display: flex;
