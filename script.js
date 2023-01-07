@@ -1,13 +1,18 @@
+/*setup*/
 
-createGrid(120);
 let gridSide = 120;
 const resetButton = document.querySelector('#resetButton');
+let bkgChoice = "gray";
+createGrid(gridSide);
+
+
+/*set event listeners*/
+
 resetButton.addEventListener('click', () =>{
     createGrid(gridSide);
 
 });
 
-let bkgChoice = "gray";
 const colorChoices = document.querySelectorAll('input[name="bkgcolor"]');
 for (let i = 0; i<colorChoices.length; i++){
     colorChoices[i].addEventListener("change", () =>{
@@ -20,18 +25,24 @@ const sideInput = document.querySelector('#side');
 });
 
 
-
+/* function defs*/
 function createGrid(side){
 
     const gridHolder = document.querySelector('#gridHolder');
+    clearOldGrid();
+    drawNewGrid(side);
+    return;
+}
 
-/* clear any existing grid then draw new grid*/
-
-    const oldGridToClear = document.querySelectorAll('#gridDiv');
+function clearOldGrid(){
+     const oldGridToClear = document.querySelectorAll('#gridDiv');
     for (let gridDiv = 0; gridDiv<oldGridToClear.length; gridDiv++){
             oldGridToClear[gridDiv].remove();
     }
     
+}
+function drawNewGrid(side){
+
     for (let i=0; i < side; i++){
         for(j=0; j < side; j++){
      const div = document.createElement("div");
@@ -43,4 +54,5 @@ function createGrid(side){
     }
     placeholder = "repeat("+side+", 1fr)";
     gridHolder.style["grid-template-columns"] = placeholder;
+
 }

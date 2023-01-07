@@ -1,3 +1,6 @@
+/*Sorted by selector type- still trying to decide how best to 
+organize css for readability*/
+
 body{
     display: flex;
     flex-direction: column;
@@ -6,6 +9,16 @@ body{
     gap: 10px;
     background-color: lightgrey;
 }
+
+p {
+    width: 500px;
+    word-wrap: wrap;
+}
+
+.colorChoice{
+    display: flex;
+}
+
 #gridHolder{
     display: grid;
     border: solid black 2px;
@@ -18,12 +31,12 @@ body{
     flex-direction: column;
     align-items: center;
     gap: 5px;
-  
-    
 }
+
 #resetButton{
     width: 150px;
 }
+
 #gridHolder > div {
   
     display: flex;
@@ -31,12 +44,4 @@ body{
     align-items: center;
     font-size: 24pt;
     width: auto;
-}
-.colorChoice{
-    display: flex;
-}
-
-p {
-    width: 500px;
-    word-wrap: wrap;
 }
