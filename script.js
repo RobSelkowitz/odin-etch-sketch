@@ -1,7 +1,9 @@
+
 createGrid(120);
+let gridSide = 120;
 const resetButton = document.querySelector('#resetButton');
 resetButton.addEventListener('click', () =>{
-    createGrid(50);
+    createGrid(gridSide);
 
 });
 
@@ -12,6 +14,13 @@ for (let i = 0; i<colorChoices.length; i++){
     bkgChoice = colorChoices[i].value;
 });
 }
+const sideInput = document.querySelector('#side');
+    sideInput.addEventListener("input", () =>{
+    gridSide = sideInput.value;
+});
+
+
+
 function createGrid(side){
 
     const gridHolder = document.querySelector('#gridHolder');
